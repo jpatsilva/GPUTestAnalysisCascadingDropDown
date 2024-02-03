@@ -24,7 +24,7 @@ else
             @foreach (var gpu in gpus)
             {
                 <tr>
-                    <td>@gpu.Name</td>
+                    <td>@gpu.Type</td>
                     <td>@gpu.Description</td>
                 </tr>
             }
@@ -39,27 +39,27 @@ else
     protected override async Task OnInitializedAsync()
     {
         GPU gpu1 = new GPU();
-        gpu1.Name = "Onyx";
+        gpu1.Type = "Onyx";
         gpu1.Description = "Bold and Beautiful";
         gpus.Add(gpu1);
 
         GPU gpu2 = new GPU();
-        gpu2.Name = "Belfur";
+        gpu2.Type = "Belfur";
         gpu2.Description = "Hard and crusty";
         gpus.Add(gpu2);
 
         GPU gpu3 = new GPU();
-        gpu3.Name = "Xynox";
+        gpu3.Type = "Xynox";
         gpu3.Description = "Soft but durable";
         gpus.Add(gpu3);
 
         GPU gpu4 = new GPU();
-        gpu4.Name = "Cantorlee";
+        gpu4.Type = "Cantorlee";
         gpu4.Description = "Shiny and slick";
         gpus.Add(gpu4);
 
         GPU gpu5 = new GPU();
-        gpu5.Name = "Demonic";
+        gpu5.Type = "Demonic";
         gpu5.Description = "Dark and deliberate";
         gpus.Add(gpu5);
     }

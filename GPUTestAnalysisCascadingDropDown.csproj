@@ -25,11 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
-    <Folder Include="Utilities\" />
-    <Folder Include="Profiles\" />
     <Folder Include="wwwroot\sample-data\" />
   </ItemGroup>
 
