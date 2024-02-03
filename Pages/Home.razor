@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using GPUTestAnalysisCascadingDropDown.Dtos
 @using GPUTestAnalysisCascadingDropDown.Models
 
 <PageTitle>GPU Analysis</PageTitle>
@@ -33,6 +34,8 @@ else
 }
 
 
+
+
 @code {
     private List<GPU>? gpus = new List<GPU>();
 
@@ -62,6 +65,12 @@ else
         gpu5.Type = "Demonic";
         gpu5.Description = "Dark and deliberate";
         gpus.Add(gpu5);
+    }
+
+    List<GPU> GetGPUByType(string  type)
+    {
+        IEnumerable<GPUReturnDto> gpuDtos = new List<GPUReturnDto>();
+
     }
 
 }
