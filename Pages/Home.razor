@@ -1,6 +1,9 @@
 ﻿@page "/"
+@using AutoMapper
 @using GPUTestAnalysisCascadingDropDown.Dtos
+@using GPUTestAnalysisCascadingDropDown.Interfaces
 @using GPUTestAnalysisCascadingDropDown.Models
+@using GPUTestAnalysisCascadingDropDown.Services
 
 <PageTitle>GPU Analysis</PageTitle>
 
@@ -66,11 +69,4 @@ else
         gpu5.Description = "Dark and deliberate";
         gpus.Add(gpu5);
     }
-
-    List<GPU> GetGPUByType(string  type)
-    {
-        IEnumerable<GPUReturnDto> gpuDtos = new List<GPUReturnDto>();
-
-    }
-
 }

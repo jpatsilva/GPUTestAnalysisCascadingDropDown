@@ -19,7 +19,7 @@ namespace GPUTestAnalysisCascadingDropDown.Services
             _configuration = configuration;
             _gpuUtility = new(configuration);
         }
-        public IEnumerable<GPUDto> GetGPUByType(Type type)
+        public IEnumerable<GPUReturnDto> GetGPUByType(string type)
         {
             throw new NotImplementedException();
         }

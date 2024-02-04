@@ -4,6 +4,6 @@ namespace GPUTestAnalysisCascadingDropDown.Interfaces
 {
     public interface IGPUService
     {
-        IEnumerable<GPUDto> GetGPUByType(Type type);
+        IEnumerable<GPUReturnDto> GetGPUByType(string type);
     }
 }

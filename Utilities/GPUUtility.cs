@@ -8,8 +8,8 @@ namespace GPUTestAnalysisCascadingDropDown.Utilities
     public class GPUUtility
     {
         private readonly IConfiguration _configuration;
-        private string _connectionString;
-        private string _getGPUByType;
+        private string? _connectionString;
+        private string? _getGPUByType;
 
         public GPUUtility(IConfiguration configuration)
         {
