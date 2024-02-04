@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using AutoMapper
+@using GPUTestAnalysisCascadingDropDown.Controllers
 @using GPUTestAnalysisCascadingDropDown.Dtos
 @using GPUTestAnalysisCascadingDropDown.Interfaces
 @using GPUTestAnalysisCascadingDropDown.Models
@@ -36,11 +37,12 @@ else
     </table>
 }
 
-
-
+@foundGPUs = gpuController.GetGPUByType("gfx8_expr");
 
 @code {
     private List<GPU>? gpus = new List<GPU>();
+    public GPUController gpuController = new();
+    List<GPU> foundGPUs = new List<GPU>();
 
     protected override async Task OnInitializedAsync()
     {
